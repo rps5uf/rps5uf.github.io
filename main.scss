@@ -1,0 +1,173 @@
+/*Import fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+@font-face{
+	font-family: EdwardianScriptITC;
+	src: url("edwardianscriptitc.ttf");
+}
+
+/*Main things*/
+
+html{
+	height: 100vh;
+}
+
+body{
+	font-family: 'Noto Serif', serif;
+	color: black;
+	background-image: url("https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/12020044_594522227352343_7794576830455409038_n.jpg?oh=6deb09b085914d00bf942abd9b5d9bba&oe=58EAD7DC");
+	background-size: cover;    
+   	background-repeat: no-repeat;
+    background-position: center center;
+	background-color: white; 
+	background-attachment: fixed;
+}
+
+.contentHolder {
+	border: 2px solid black;
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+	background-color: white;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 70px;
+	overflow: hidden;
+}
+
+h1 {
+	display: block;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: EdwardianScriptITC, serif;
+}
+
+h4 {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+h5{
+	display: block;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 15px;;
+    margin-left: 5px;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+p{
+	font-size:15px;
+}
+
+
+.titleBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom: 25px;
+    li {
+		font-size: 30px;
+		height: 50px;
+		line-height: 50px;
+		:hover{
+			background-color: #111;
+		}
+		a{
+			display: block;
+    		color: white;
+    		text-align: center;
+    		padding: 0px 15px;
+    		text-decoration: none;
+    		.icon{
+    			width: 40px;
+    			height: 40px;
+    			margin: 5px;
+    			border-radius: 10px;
+    		}
+		}
+	}
+	li.active {
+    	background-color: red !important;
+    	:hover{
+    		background-color: red !important;
+    	}
+	}
+}
+
+#rotating-item-wrapper
+{
+	position: relative;
+	float: left;
+	width: 350px;
+	height: 350px;
+	margin: 0;
+	display: block;
+	#rotateimg{
+		object-fit: cover;
+		width: 350px;
+		height: 350px;
+		overflow: hidden;
+		border-radius: 10px;
+	}
+}
+
+.rotating-item
+{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+
+.About {
+  float: right;
+  width: 400px;
+  margin: 0;
+  display: block;
+  position: static;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.center{
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+iframe.center{
+	margin: 0 120px !important;
+}
+
+.newsicon{
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	border-radius: 10px;
+}
