@@ -117,8 +117,7 @@ p {
   float: right;
   width: 400px;
   margin: 0;
-  display: block;
-  position: static; }
+  display: block; }
 
 .left {
   float: left; }
@@ -139,5 +138,10 @@ iframe.center {
   height: 100px;
   margin: 5px;
   border-radius: 10px; }
+
+.fug {
+  width: 800px;
+  padding-top: 220px;
+}
 
 /*# sourceMappingURL=main.css.map */
