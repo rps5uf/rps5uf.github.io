@@ -1,0 +1,24 @@
+---
+title: Articles
+layout: default
+cat: articles
+---
+<div class="About left">
+	<h4>Straight News & Investigations</h4>
+	{%for post in site.posts%}{%if post.cat2 =="straightnews"%}
+	<p><a href="{%if post.link%}{{post.link}}{%else%}{{post.url}}{%endif%}">{{post.title}}{%if post.link%}<i class="fa">&#xf08e;</i>{%endif%}</a></p>{%endif%}
+	{%endfor%}
+</div>
+<div class="About right">
+	<h4>Editorials & Satires</h4>
+	{%for post in site.posts%}{%if post.cat2 =="satire"%}
+	<p><a href="{%if post.link%}{{post.link}}{%else%}{{post.url}}{%endif%}">{{post.title}}{%if post.link%}<i class="fa">&#xf08e;</i>{%endif%}</a></p>{%endif%}
+	{%endfor%}
+</div>
+<h4 style="float: left; width: 100%;">Full Archives</h4>
+<div class="center" style="float: left; width: 100%;">
+<a href="http://dailycaller.com/author/rob-shimshock/"><img src="/img/dcico.png" class="newsicon"></a>
+<a href="http://www.campusreform.org/Author/?AuthorID=2502098"><img src="/img/campusreformico.png" class="newsicon"></a>
+<a href="http://www.breitbart.com/author/rshimshock/"><img src="/img/breitbartico.png" class="newsicon"></a>
+<a href="http://www.cavalierdaily.com/staff/robert-shimshock"><img src="/img/cdico.png" class="newsicon"></a>
+</div>

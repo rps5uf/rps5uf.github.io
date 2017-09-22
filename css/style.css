@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif");
 @font-face {
   font-family: EdwardianScriptITC;
-  src: url("edwardianscriptitc.ttf"); }
+  src: url("/font/edwardianscriptitc.ttf"); }
 /*Main things*/
 html {
   height: 100vh; }
@@ -18,7 +18,7 @@ body {
   background-color: white;
   background-attachment: fixed; }
 
-.contentHolder {
+#main {
   border: 2px solid black;
   margin-right: auto;
   margin-left: auto;
@@ -143,5 +143,3 @@ iframe.center {
   width: 800px;
   padding-top: 220px;
 }
-
-/*# sourceMappingURL=main.css.map */
