@@ -3,19 +3,22 @@ title: Videos
 layout: default
 cat: videos
 ---
-<div class="center">
-	<h4>Commentary</h4>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/cJMeXw_NhSo" frameborder="0" allowfullscreen></iframe>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/u8-25vVRhfA" frameborder="0" allowfullscreen></iframe>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/lti7RLqvg0g" frameborder="0" allowfullscreen></iframe>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/IYUCQCK7fT8" frameborder="0" allowfullscreen></iframe>
-	<h4>Interviews</h4>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/uVlii9vYaJ0" frameborder="0" allowfullscreen></iframe>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/a2ULsdYSgEw" frameborder="0" allowfullscreen></iframe>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/Q61AXWa0L1Y" frameborder="0" allowfullscreen></iframe>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/jSWMVALwpGk" frameborder="0" allowfullscreen></iframe>
-	<h4>Piano</h4>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/8WZtDfB22FI" frameborder="0" allowfullscreen></iframe>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/eGGeZhkxr04" frameborder="0" allowfullscreen></iframe>
-	<iframe class="about" width="320" height="180" src="https://www.youtube.com/embed/Ob0NsF9jOL0" frameborder="0" allowfullscreen></iframe>	
+<div class="centerflex">
+	<div class="videogrid">
+		<h4>Commentary</h4>
+		{%for post in site.posts%}{%if post.cat =="videos" and post.cat2=="commentary"%}
+		<a class="videolink" href="{{post.url}}" style="background: url(https://img.youtube.com/vi/{{post.ytid}}/mqdefault.jpg);">{{post.title | truncate:35}}</a>
+		{%endif%}
+		{%endfor%}
+		<h4>Interviews</h4>
+		{%for post in site.posts%}{%if post.cat =="videos" and post.cat2=="interview"%}
+		<a class="videolink" href="{{post.url}}" style="background: url(https://img.youtube.com/vi/{{post.ytid}}/mqdefault.jpg);">{{post.title | truncate:35}}</a>
+		{%endif%}
+		{%endfor%}
+		<h4>Piano</h4>
+		{%for post in site.posts%}{%if post.cat =="videos" and post.cat2=="piano"%}
+		<a class="videolink" href="{{post.url}}" style="background: url(https://img.youtube.com/vi/{{post.ytid}}/mqdefault.jpg);">{{post.title | truncate:35}}</a>
+		{%endif%}
+		{%endfor%}	
+	</div>
 </div>
