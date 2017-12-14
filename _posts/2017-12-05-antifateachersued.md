@@ -1,5 +1,5 @@
 ---
-title: Antifa Middle School Teacher Sued For Nearly $200K
+title: Antifa Middle School Teacher Sued
 layout: video
 cat: videos
 cat2: commentary
