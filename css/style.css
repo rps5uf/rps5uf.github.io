@@ -178,3 +178,8 @@ iframe.center {
   text-align: left;
   filter: grayscale(100%);
 }
+
+.reviewimg{
+  height: auto;
+  max-width: 100%;
+}
