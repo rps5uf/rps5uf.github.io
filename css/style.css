@@ -5,8 +5,7 @@
   font-family: EdwardianScriptITC;
   src: url("/font/edwardianscriptitc.ttf"); }
 /*Main things*/
-html {
-  height: 100vh; }
+
 
 body {
   font-family: 'Noto Serif', serif;
@@ -25,42 +24,20 @@ body {
   width: 800px;
   background-color: white;
   padding-top: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
   padding-bottom: 70px;
+  padding-left: 0px;
+  padding-right: 0px;
   overflow: hidden; }
 
-h1 {
-  display: block;
-  font-size: 50px;
-  margin-top: 15px;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  font-family: EdwardianScriptITC, serif; }
+#header {
+  width: 800px;
+}
 
-h4 {
-  display: block;
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-weight: bold; }
+.header_left {
+  float: left;}
 
-h5 {
-  display: block;
-  font-size: 15px;
-  margin-top: 0;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  margin-right: 0;
-  font-weight: bold; }
-
-p {
-  font-size: 15px; }
+.header_right {
+  float: right;}
 
 .titleBar {
   list-style-type: none;
@@ -92,12 +69,33 @@ p {
     .titleBar li.active :hover {
       background-color: red !important; }
 
+h1 {
+  display: block;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: EdwardianScriptITC, serif; }
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold; }
+
+h5 {
+  font-size: 15px;
+  font-weight: bold; }
+
+p {
+  font-size: 15px;}
+
+
+
 #rotating-item-wrapper {
   position: relative;
   float: left;
   width: 350px;
   height: 350px;
-  margin: 0;
+  margin-left: 20px;
+  margin-top: 50px;
   display: block; }
   #rotating-item-wrapper #rotateimg {
     object-fit: cover;
@@ -113,22 +111,31 @@ p {
   left: 0;
   object-fit: cover; }
 
-.About {
-  float: right;
-  width: 400px;
-  margin: 0;
-  display: block; }
+
+.two_col_container {
+  padding: 0px;
+  margin: 0px;
+}
 
 .left {
-  float: left; }
+  float: left;
+  width: 380px;
+  margin: 10px;
+  display: block;}
 
 .right {
-  float: right; }
+  float: right;
+  width: 380px;
+  margin: 10px;
+  display: block;}
 
 .center {
+  float: center;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; }
+  text-align: center;
+  display: block;}
 
 iframe.center {
   margin: 0 120px !important; }
@@ -177,9 +184,4 @@ iframe.center {
   padding: 10px;
   text-align: left;
   filter: grayscale(100%);
-}
-
-.reviewimg{
-  height: auto;
-  max-width: 100%;
 }
